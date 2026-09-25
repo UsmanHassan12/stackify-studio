@@ -1,0 +1,31 @@
+# robots.txt for stackifystudio.com
+User-agent: *
+Disallow: /admin/
+Allow: /
+
+# AI Crawlers & Answer Engines (GEO indexing enabled)
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://stackifystudio.com/sitemap.xml

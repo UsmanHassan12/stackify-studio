@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Serve existing files/directories from /public first (assets, storage link, etc.)
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteCond %{DOCUMENT_ROOT}/public/$1 -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public/$1 -d
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    # Block direct access to sensitive framework/source paths from web root.
+    RewriteRule ^(\.|app/|bootstrap/|config/|database/|resources/|routes/|tests/|vendor/) - [F,L,NC]
+    RewriteRule ^(artisan|composer\.(json|lock)|package\.json|package-lock\.json|phpunit\.xml)$ - [F,L,NC]
+
+    # Fallback to root front controller.
+    RewriteRule ^ index.php [L]
+</IfModule>
+

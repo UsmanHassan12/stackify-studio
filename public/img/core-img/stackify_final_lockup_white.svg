@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="218 44 260 72" width="260" height="72" role="img" aria-label="Stackify Studio">
+  <title>Stackify Studio</title>
+  <desc>The three-blade pinwheel mark centered against the two-line wordmark (reversed/white edition)</desc>
+  <g transform="translate(247,80)">
+    <rect x="0" y="-5" width="34" height="10" rx="5" fill="#FFFFFF"/>
+    <rect x="0" y="-5" width="34" height="10" rx="5" fill="#FFFFFF" transform="rotate(120)"/>
+    <rect x="0" y="-5" width="34" height="10" rx="5" fill="#FFFFFF" transform="rotate(240)"/>
+  </g>
+  <text x="307" y="77" font-size="34" font-weight="700" letter-spacing="-0.5" fill="#FFFFFF" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">STACKIFY</text>
+  <text x="307" y="105" font-size="15" letter-spacing="3" fill="#94A3B8" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">STUDIO</text>
+</svg>
